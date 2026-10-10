@@ -348,3 +348,38 @@ body {
 .conclusao p:last-child {
   margin-bottom: 0;
 }
+
+/* ==========================================
+   7. FOOTER / RODAPÉ (Semântico)
+   ========================================== */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: black;
+  border-top: 1px solid rgb(95, 102, 91); /* Mesma barra do header na parte superior */
+  margin-top: auto;                        /* Garante que fique fixo no fim da página */
+}
+
+.copyright {
+  margin: 0;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.footer-nav a:hover {
+  color: #00ea6a; /* Destaque em verde LOUD ao passar o mouse */
+}
