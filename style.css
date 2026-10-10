@@ -8,7 +8,7 @@
 
 .logo {
   height:40px; /* Altere este valor para definir a altura desejada */
-  width: auto;  /* Garante que a largura se ajuste automaticamente sem distorcer */
+  width: auto; /* Garante que a largura se ajuste automaticamente sem distorcer */
   border-radius: 100px;
 }
 
@@ -16,4 +16,13 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif; 
+}
+
+.fotovic_loud {
+  height:400px;
+  width: auto; 
+}
+
+.intro{
+  
 }
