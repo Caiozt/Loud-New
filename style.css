@@ -5,13 +5,15 @@
   padding-bottom: 20px;
   background-color: black;
 }
+
 .logo {
-  height: 10px;
-  width: auto;
+  height:40px; /* Altere este valor para definir a altura desejada */
+  width: auto;  /* Garante que a largura se ajuste automaticamente sem distorcer */
   border-radius: 100px;
 }
 
 body {
     background-color: black;
+    color: white;
     font-family: Arial, sans-serif; 
 }
