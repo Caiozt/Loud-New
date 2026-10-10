@@ -18,14 +18,14 @@ body {
     font-family: Arial, sans-serif; 
 }
 
-.intro {
+.mid {
   display: flex;             /* Coloca o <article> e a <img> lado a lado */
   align-items: center;       /* Alinha verticalmente no centro */
   justify-content: space-between;
   gap: 40px;                 /* Espaço entre o texto e a imagem */
 }
 
-.intro article {
+.mid article {
   flex: 1;                   /* Faz o artigo ocupar todo o espaço restante */
 }
 
