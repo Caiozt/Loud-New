@@ -1,37 +1,130 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 20px;
+body {
   background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* HEADER */
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 15px 5%;
+  background-color: black;
+  border-bottom: 1px solid rgb(95, 102, 91);
 }
 
 .logo {
-  height:40px; /* Altere este valor para definir a altura desejada */
-  width: auto; /* Garante que a largura se ajuste automaticamente sem distorcer */
+  justify-self: start;
+  height: 40px;
+  width: auto;
   border-radius: 100px;
 }
 
-body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif; 
+.nav {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* INTRO */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px 5%;
+  min-height: 200px;
+  background-image: url("img/fundoloud_loud.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro article {
+  max-width: 550px;
+  text-align: left;
+}
+
+/* SEÇÃO MID (GRID DE CARDS) */
 .mid {
-  display: flex;             /* Coloca o <article> e a <img> lado a lado */
-  align-items: center;       /* Alinha verticalmente no centro */
-  justify-content: space-between;
-  gap: 40px;                 /* Espaço entre o texto e a imagem */
+  padding: 40px 5%;
 }
 
-.mid article {
-  flex: 1;                   /* Faz o artigo ocupar todo o espaço restante */
+.mid h2 {
+  font-size: 26px;
+  margin-bottom: 24px;
+  color: white;
 }
 
-.fotovic_loud {
-  max-width: 450px;          /* Largura máxima para a imagem */
-  width: 100%;               /* Deixa a imagem responsiva */
-  height: auto;              /* Mantém a proporção da imagem */
-  border-radius: 8px;        /* Opcional: cantos arredondados */
+/* Grid responsável por alinhar os quadros lado a lado */
+.conquistas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Quadro individual (Card) */
+.card {
+  background-color: #0c0f12;
+  border: 1px solid #1a241d;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Espaço da imagem no topo do card */
+.card-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  background-color: #1a1a1a; /* Fundo cinza padrão para quando não houver imagem */
+}
+
+/* Área de texto do card */
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-body h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* Selo/Tag verde (Badge) */
+.badge {
+  align-self: flex-start;
+  background-color: #00ea6a;
+  color: black;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 5px 12px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+/* Lista de conquistas dentro do card */
+.card-body ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #cccccc;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.card-body li {
+  margin-bottom: 6px;
 }
