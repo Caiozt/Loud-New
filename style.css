@@ -1,3 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  background-color: black;
+}
+.logo {
+  height: 50px;
+  width: auto;
+  border-radius: 100px;
+}
+
 body {
     background-color: black;
     font-family: Arial, sans-serif; 
