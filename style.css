@@ -18,11 +18,20 @@ body {
     font-family: Arial, sans-serif; 
 }
 
-.fotovic_loud {
-  height:400px;
-  width: auto; 
+.intro {
+  display: flex;             /* Coloca o <article> e a <img> lado a lado */
+  align-items: center;       /* Alinha verticalmente no centro */
+  justify-content: space-between;
+  gap: 40px;                 /* Espaço entre o texto e a imagem */
 }
 
-.intro{
-  
+.intro article {
+  flex: 1;                   /* Faz o artigo ocupar todo o espaço restante */
+}
+
+.fotovic_loud {
+  max-width: 450px;          /* Largura máxima para a imagem */
+  width: 100%;               /* Deixa a imagem responsiva */
+  height: auto;              /* Mantém a proporção da imagem */
+  border-radius: 8px;        /* Opcional: cantos arredondados */
 }
