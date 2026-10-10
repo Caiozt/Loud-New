@@ -9,11 +9,27 @@
 <body>
     <header class="header">
         <img src="img/logoant_loud.png" alt="Logo LOUD" class="logo">
+        
         <nav class="nav">
             <a href="index.html">Início</a>
             <a href="sobre_nos.html">Sobre a Empresa</a>
             <a href="contatos.html">Contatos</a>
         </nav>
+
+        <!-- Menu de Perfil 100% Semântico -->
+        <aside class="user-menu">
+            <button class="user-btn" aria-label="Menu do usuário">
+                <img src="img/icon_perfil.png" alt="Perfil" class="profile-icon">
+            </button>
+            
+            <menu class="dropdown-menu">
+                <a href="login.html">Fazer Login</a>
+                <a href="cadastro.html">Criar Conta</a>
+                <hr>
+                <a href="perfil.html">Meu Perfil</a>
+                <a href="configuracoes.html">Configurações</a>
+            </menu>
+        </aside>
     </header>
 
     <main>
@@ -85,18 +101,20 @@
                 </article>
             </div>
         </section>
-        <section>
-            <h1>Time campeão do Mundo:</h1>
-            <p>Em 2022, a LOUD formou um elenco que entrou para a história do VALORANT: Sacy, pANcada, Saadhak, aspas e Less, comandados pelo treinador bzkA. Cada jogador vinha de uma trajetória diferente, mas juntos formaram uma das equipes mais fortes daquele ano.</p>
-            <h2>A trajetória até o título</h2>
-            <p>A LOUD começou 2022 dominando o cenário brasileiro, conquistando as duas etapas do Challengers Brazil de forma invicta nas finais. No cenário internacional, chegou à final do Masters Reykjavík, mas perdeu para a OpTic Gaming. Depois, teve uma campanha decepcionante no Masters Copenhagen, terminando em 11º–12º lugar.
-            </p>
-            <p>No Champions 2022, disputado em Istambul, a equipe começou vencendo a ZETA DIVISION e avançou aos playoffs. A partir daí, venceu Leviatán por 2–0, DRX por 2–0 e novamente a OpTic Gaming por 2–0 na final da chave superior.
-            Na grande final, a LOUD reencontrou justamente a OpTic, sua maior rival daquele ano. 
-            </p>
-            <p>Dessa vez, os brasileiros venceram por 3-1, conquistando o VALORANT Champions 2022 e se tornando campeões mundiais.
-            </p>
-            <img src="./img/fotovic_loud.jpg" alt="Loud win">
+        <section class="enredo">
+            <article class="enredo-texto">
+                <h1>Time campeão do Mundo</h1>
+                <p>Em 2022, a LOUD formou um elenco que entrou para a história do VALORANT: Sacy, pANcada, Saadhak, aspas e Less, comandados pelo treinador bzkA. Cada jogador vinha de uma trajetória diferente, mas juntos formaram uma das equipes mais fortes daquele ano.</p>
+                
+                <h2>A trajetória até o título</h2>
+                <p>A LOUD começou 2022 dominando o cenário brasileiro, conquistando as duas etapas do Challengers Brazil de forma invicta nas finais. No cenário internacional, chegou à final do Masters Reykjavík, mas perdeu para a OpTic Gaming. Depois, teve uma campanha decepcionante no Masters Copenhagen, terminando em 11º–12º lugar.</p>
+                
+                <p>No Champions 2022, disputado em Istambul, a equipe começou vencendo a ZETA DIVISION e avançou aos playoffs. A partir daí, venceu Leviatán por 2–0, DRX por 2–0 e novamente a OpTic Gaming por 2–0 na final da chave superior. Na grande final, a LOUD reencontrou justamente a OpTic, sua maior rival daquele ano.</p>
+                
+                <p>Dessa vez, os brasileiros venceram por 3-1, conquistando o VALORANT Champions 2022 e se tornando campeões mundiais.</p>
+            </article>
+
+            <img src="img/fotovic_loud.jpg" alt="LOUD Campeã do Mundo 2022" class="loud_wind">
         </section>
         <section>
             <h1>Fase atual: </h1>

@@ -15,7 +15,7 @@ body {
 }
 
 /* ==========================================
-   2. HEADER / CABEÇALHO (Todas as páginas)
+   2. HEADER / CABEÇALHO & DROPDOWN DE USUÁRIO
    ========================================== */
 .header {
   display: grid;
@@ -43,6 +43,87 @@ body {
 .nav a {
   color: white;
   text-decoration: none;
+}
+
+/* Estrutura do Perfil / Menu Suspenso (<aside>) */
+.user-menu {
+  position: relative;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+}
+
+.user-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.user-btn:hover .profile-icon,
+.user-menu:focus-within .profile-icon {
+  border-color: #00ea6a;
+}
+
+/* Lista Suspensa (<menu>) */
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 130%;
+  background-color: #0c0f12;
+  border: 1px solid #1a241d;
+  border-radius: 8px;
+  min-width: 180px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  margin: 0; /* Reseta as margens padrão do <menu> */
+  z-index: 100;
+
+  /* Escondido por padrão */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: all 0.2s ease;
+}
+
+/* Exibe a lista ao passar o mouse ou focar no botão */
+.user-menu:hover .dropdown-menu,
+.user-menu:focus-within .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu a {
+  color: #e0e0e0;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.dropdown-menu a:hover {
+  background-color: #1a241d;
+  color: #00ea6a;
+}
+
+.dropdown-menu hr {
+  border: 0;
+  border-top: 1px solid #1a241d;
+  margin: 6px 0;
 }
 
 /* ==========================================
@@ -166,7 +247,7 @@ body {
   margin-top: 0;
   font-size: 32px;
   color: white;
-  text-align: center; /* Centraliza o título */
+  text-align: center;
 }
 
 .sobre-card p {
@@ -174,4 +255,48 @@ body {
   font-size: 16px;
   color: #e0e0e0;
   margin-bottom: 0;
+}
+
+/* ==========================================
+   5. SEÇÃO ENREDO (Time Campeão)
+   ========================================== */
+.enredo {
+  padding: 40px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.enredo-texto {
+  max-width: 900px;
+}
+
+.enredo h1 {
+  font-size: 28px;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.enredo h2 {
+  font-size: 22px;
+  color: #00ea6a;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.enredo p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #cccccc;
+  margin-bottom: 14px;
+}
+
+.loud_wind {
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #1a241d;
+  margin-top: 20px;
 }
