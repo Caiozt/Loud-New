@@ -315,7 +315,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 750px;              /* Aumentado de 450px para 750px para dar espaço à imagem */
-  background-image: url("img/logoloudnew_loud.png");
+  background-image: url("img/logoant_loud.png");
   background-size: contain;       /* Garante que o símbolo apareça 100% inteiro sem cortes */
   background-position: center;
   background-repeat: no-repeat;
